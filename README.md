@@ -45,20 +45,32 @@ COMANDOS BÁSICOS DE GIT
 .git commit -m "Comentario o descripción"
   Al ejecutar este comando se unen todos los archivos que ya han sido modificados, están terminados y pueden hacer parte de la nueva       version local del repositorio.
 
+.git log
+  Muestra la información especifica de cada versión local realizada en la rama en la que estamos posicionados. (Salimos de esta           información con la tecla q).
+
+.git log > commit.txt
+  Crea un archivo txt con la información de todos los commit generados.
+
 .git checkout "nombre del archivo"
-  Su utilidad nos permite regresar los cambios hecos en un fichero siempre y cuando no hayamos hecho uso del comando "git add".
+  Su utilidad nos permite regresar los cambios hechos en un fichero siempre y cuando no hayamos hecho uso del comando "git add".
+  
+.git checkout "código SHA"
+  Entre la información que muestra el comando "git log", tenemos un código SHA hexadecimal único que identifica cada uno de los commit     generados en la rama en la que estamos posicionados, al ejecutar entonces esta línea de código podremos viajar en el tiempo,             regresando el proyecto a versiones o commit anteriores. Para regresar al proyecto como estaba simplemente utilizamos "git checkout       master".
+  
+.git reset --soft "código SHA"
+  Cada commit es un punto en la historia del repositorio. Si la última versión generada del proyecto a nivel local no es el               resultado final que esperabamos se puede utlizar este comando, el cual nos regresaria a cualquier de esos puntos o commit anteriores     del  proyecto con la diferencia de que dicho commit entre el que estabamos y al que nos regresamos, se eliminaran. Solo se elimina el   o los commit pero los ficheros quedan intactos.
+  
+.git reset --hard "código SHA"
+  Este comando al igual que el anterior borra los commit entre el que estabamos y al que nos regresamos, pero a diferencia del anterior,   este si elimina los ficheros y modificaciones realizadas en el código por lo que nunca más podremos volver a recuperar esa               información.
 
 .git diff "nombre del archivo"
-  Identifica y muestra los cambios especificos hechos en un documento en el cual no se ha utilizado el comando "git add".
+  Identifica y muestra los cambios específicos hechos en un documento en el cual no se ha utilizado el comando "git add".
 
 .git branch
   Nos permite visualizar la rama en la que estamos ubicados. Por defecto GIT nos crea una rama llamada "master" la cual contiene todo el   proyecto tontal local como en la nube.
 
 .git branch "nombre de la nueva rama"
   Una rama alternativa en nuestro proyecto puede ayudarnos a contener una copia de seguridad. Además, con la construcción de varias       ramas, podemos separar el proyecto por grupos de trabajo definidos, que trabajarán en un módulo específico y cuando sea necesario       hacer una integración más ordenada a la rama principal o master.
-
-.git log
-  Muestra la información especifica de cada versión local realizada en la rama en la que estamos posicionados. (Salimos de esta           información con la tecla q).
   
 .git checkout "nombre de la rama"
   Me permite desplazarme a través de las diferentes ramas.
