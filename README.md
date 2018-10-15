@@ -165,41 +165,5 @@ COMANDOS BÁSICOS DE GIT
   Nos permitirá crear una nueva rama la cual indicaremos a GitHub que cree una página web bajo sus dominios. "'nombre de la               comunidad.gitgub.io/'nombre del repositorio''".
 
 [Fin]
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 
