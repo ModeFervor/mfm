@@ -34,7 +34,7 @@ COMANDOS BÁSICOS DE CMD/UNIX
 
 COMANDOS BÁSICOS DE GIT
 
-{Proyecto individual}
+[Proyecto individual]
 
 .git clone "URL con la ruta del repositorio"
   Nos permite cloar un repositorio alojado en la nube directamente a un lugar indicado por nosotro en nuestro computador.
@@ -119,9 +119,9 @@ COMANDOS BÁSICOS DE GIT
 .git push origin tags
   Este comando nos permite subir al repositorio en la nube los tags otorgado a los diferentes commit.
 
-{Fin}  
+[Fin]
 
-{Proyecto compartido}
+[Proyecto compartido]
 
 .Desplazarnos a la pestañas settings que está en el repositorio en GitHub.
 
@@ -133,10 +133,72 @@ COMANDOS BÁSICOS DE GIT
 
 .Crear una nueva conexión utlizando el comando "git remote add origin "URL con la ruta del repositorio"".
 
-  {Pasos para el nuevo integrante}
+  [Pasos para el nuevo integrante]
 
   .Clonar el repositorio alojado en la nube hacia un espacio indicado por nosotros en el computador local usando el comando "git clone      "URL con la ruta del repositorio"".
   
-  {Fin}
+  [Fin]
   
-{Fin}
+[Clonar cambios de otro miembro del equipo]
+.Antes de hacer cualquier subida al repositorio en la nube de algún nuevo cambios, el sistema GIT valida si no hay algún cambio hecho ya por algún otro miembro del equipo.
+
+.git fetch origin
+  Esto hará que los cambios hechos por otro miembro del equipo pasen a una rama oculta llamada origin/master a la cual accederemos para   copiar dichos cambios.
+   
+.git merge origin/master
+  Fusiona los cambios descargados con el comando anterior con nuestro proyecto, de esta manera GIT nos permitirá hacer "push" sin         problema.
+   
+[Fin]
+
+[Fin]
+
+[Creación de página web con GitHub para proyectos personales]
+
+
+
+[Fin]
+
+[Creación de página web con GitHub para proyectos grupales]
+
+.git branch gh-pages
+  Nos permitirá crear una nueva rama la cual indicaremos a GitHub que cree una página web bajo sus dominios. "'nombre de la               comunidad.gitgub.io/'nombre del repositorio''".
+
+[Fin]
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
