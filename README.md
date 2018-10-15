@@ -1,4 +1,4 @@
-# MFM
+# Mode Fervor Management
 
 CONFIGURACIÓN INICIAL DE GIT
 
@@ -38,6 +38,7 @@ COMANDOS BÁSICOS DE GIT
 
 .git clone "URL con la ruta del repositorio"
   Nos permite cloar un repositorio alojado en la nube directamente a un lugar indicado por nosotro en nuestro computador.
+  
 .git init
   Este comando convierte un proyecto, carpeta o ficehero local en un repositorio de GIT.
   
@@ -77,7 +78,7 @@ COMANDOS BÁSICOS DE GIT
 .git branch
   Nos permite visualizar la rama en la que estamos ubicados. Por defecto GIT nos crea una rama llamada "master" la cual contiene todo el   proyecto tontal local como en la nube.
   
-  .git branch
+.git branch -
   Nos permite visualizar la rama en la que estamos ubicados y aquellas que se encuentran ocultas.
 
 .git branch "nombre de la nueva rama"
