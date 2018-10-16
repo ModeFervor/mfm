@@ -90,18 +90,21 @@ Archivo ".gitignore"
   
 .git checkout "código SHA"
   Entre la información que muestra el comando "git log", tenemos un código SHA hexadecimal único que identifica cada uno de los commit     generados en la rama en la que estamos posicionados, al ejecutar entonces esta línea de código podremos viajar en el tiempo,             regresando el proyecto a versiones o commit anteriores. Para regresar al head (último commit generado) simplemente ingresamos el         comando "git checkout master".
-  
-.git reset HEAD (Último commit hecho) "nombre del archivo"
-  ELimina el último commit generado y regresa los archivos que hacían parte de dicho commit al steage area.
 
+.git reset "código SHA"
+  Al ejecutar este comando podremos posicionarnos en el commit correspondiente al código SHA ingresado, borrando solamente las acciones     commit y retirando los archivos de stage area sin modificarlos.
+  
+.git reset HEAD or HEAD "nombre del archivo"
+  Retorna todos los archivos del stage area para que pueda seguir siendo modificado.
+  
 .git reset --
-  Retira todos los archivo del stage area para que pueda seguir siendo modificado.
+  Retrona todos los archivos del stage area para que pueda seguir siendo modificado.
   
 .git reset "nombre del archivo"
   Retira un archivo del stage area para que pueda seguir siendo modificado.
   
 .git reset --soft "código SHA"
-  Nos regresa al commit correspondiente al código SHA ingresado pero nos deja intacto el código 
+  Nos regresa al commit correspondiente al código SHA ingresado, pone los archivos en el stage area y nos señala las modificaciones que     habíamos hecho en el commit 
   
 .git reset --hard "código SHA"
   Posiciona el proyecto en la version del commit perteneciente al código SHA ingresado en el comando y borra todos los commit que se       hicier luego de este incluyendo el código hecho en este.
