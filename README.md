@@ -109,6 +109,8 @@ Archivo ".gitignore"
 .git reset --hard "código SHA"
   Posiciona el proyecto en la version del commit perteneciente al código SHA ingresado en el comando y borra todos los commit que se       hicier luego de este incluyendo el código hecho en este.
   
+.git 
+  
 .git branch
   Nos permite visualizar la rama en la que estamos ubicados. Por defecto GIT nos crea una rama llamada "master" la cual contiene todo el   proyecto tontal local como en la nube.
   
